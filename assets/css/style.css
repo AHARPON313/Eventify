@@ -27,8 +27,39 @@
 .nav-link{
     color: var(--text-white);
     font-weight: bold;
+    position: relative;
+}
+.nav-link:hover{
+    color: var(--text-white);
+
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    color: var(--text-white);
+    background-color: var(--background-color-white);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+    transition: 0.3s;
 }
 
 .nav-btn{
-    background-color: var(--background-color);
+    background-color: var(--background-color-white);
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: var(--text-blue);
+}
+
+.nav-btn:hover{
+    background-color: var(--background-color-white);
+    color: var(--text-blue);
 }
