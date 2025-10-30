@@ -63,3 +63,36 @@
     background-color: var(--background-color-white);
     color: var(--text-blue);
 }
+
+
+.Hero-countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-count-content{
+    text-align: center;
+}
+
+ .count {
+    color: #ee163a;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+ .text {
+    color: #ee163a;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.count-color-1  .count {
+       color: #ee163a;
+}
+
+.count-color-1  .count {
+       color: #ee163a;
+}
