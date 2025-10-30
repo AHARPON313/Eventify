@@ -1,0 +1,13 @@
+:root{
+    --text-white:#ffffff;
+    --text-blue:rgb(24, 99, 255);
+    --titel-color:rgb(27, 39, 61);
+    --text-hover:#ffffff;
+    --text-hover:linear-gradient(to right, #102baf 0%, #1664ff 100%);
+    --titel-sub-text: #777777;
+    --background-color:#ffffff;
+    --hero-secton-overlay: -webkit-linear-gradient(left, rgba(16, 43, 175, 0.2) 0%, rgba(22, 100, 255, 0.2) 100%);
+    --sponsor-bg-color:rgb(245, 248, 255);
+    --card-hover-color: linear-gradient(to right, #102baf 0%, #1664ff 100%);
+    --card-box-shadow: 0px 8px 16px 0px rgba(72, 127, 255, 0.1);
+}
