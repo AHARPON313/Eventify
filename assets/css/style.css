@@ -5,7 +5,7 @@
     --text-hover:#ffffff;
     --text-hover:linear-gradient(to right, #102baf 0%, #1664ff 100%);
     --titel-sub-text: #777777;
-    --background-color:#ffffff;
+    --background-color-white:#ffffff;
     --hero-secton-overlay: -webkit-linear-gradient(left, rgba(16, 43, 175, 0.2) 0%, rgba(22, 100, 255, 0.2) 100%);
     --sponsor-bg-color:rgb(245, 248, 255);
     --card-hover-color: linear-gradient(to right, #102baf 0%, #1664ff 100%);
@@ -14,5 +14,21 @@
 
 
 .hero-secton{
-    
+    background-image: url(/assets/images/jpg/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.navbar{
+    padding: 20px 0;
+}
+
+.nav-link{
+    color: var(--text-white);
+    font-weight: bold;
+}
+
+.nav-btn{
+    background-color: var(--background-color);
 }
