@@ -11,88 +11,104 @@
     --card-hover-color: linear-gradient(to right, #102baf 0%, #1664ff 100%);
     --card-box-shadow: 0px 8px 16px 0px rgba(72, 127, 255, 0.1);
 }
-
-
-.hero-secton{
-    background-image: url(/assets/images/jpg/header-bg.jpg);
+/* ========== wahed-css start ========== */
+/* ----- my Components start ----- */
+:root{
+    --theam-blue: #102baf; 
+}
+.c-t{
+    color: var(--text-blue) !important;
+}
+.bg-t{
+    background-color: var(--text-blue) !important;
+}
+/* ----- my Components end ----- */
+.section-gap{
+    padding-top: 115px;
+    padding-bottom:  130px;
+}
+.about-bg{
+    background-color: #f5f8ff;
+}
+.card-radius{
+    border-bottom-right-radius: 0rem !important;
+    border-top-left-radius: 0rem !important;
+}
+.icon span{
+    position: absolute;
+    top: -10%;
+    left: 33%;
+    opacity: 0.08;
+    transform: scale(1.2);
+}
+.shadow-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-hover-1{
+    transition: 0.5s;
+}
+.card-hover-1:hover{
+    background-color: rgba(11, 28, 112, 1);
+}
+.card-hover-1:hover i,
+.card-hover-1:hover p,
+.card-hover-1:hover h5,
+.card-hover-1:hover .icon span{
+    color: white !important;
+}
+.card-img-top {
+    height: 360px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    transition: transform 0.4s ease;
+    border-top-right-radius: 0.5rem;
+  }
+@media (max-width: 768px) {
+    .card-img-top {
+      height: 330px;
+    }
+  }
+.icon-set{
+    opacity: 0% !important;
+    transition: 0.5s;
+}
+.card-hover-2:hover .icon-set{
+    opacity: 100% !important;
+}
+.card-hover-2 .card-body .icon-set i{
+    transition: 0.5s;
+}
+.card-hover-2 .card-body .icon-set i:hover{
+    color: #102baf !important;
+}
+.card-hover-2 .card-body{
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    transition: 0.5s;
+}
+.card-hover-2:hover .card-body{
+    background-color: var(--theam-blue);
+    padding-top: 50px !important;
+}
+.card-hover-2:hover .card-body h5,
+.card-hover-2:hover .card-body p{
+    color: white !important;
+}
+.card-border-blue{
+    border: 3px solid #E7EFFF !important;
+}
+.prise{
+    background-image: linear-gradient(180deg, rgba(24, 99, 255, 0.85) 0%, rgba(24, 99, 255, 0.85) 100%), url("../images/event/pricing-bg.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 750px;
 }
 
-.navbar{
-    padding: 20px 0;
+.prise h2,
+.prise p{
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-.nav-link{
-    color: var(--text-white);
-    font-weight: bold;
-    position: relative;
-}
-.nav-link:hover{
-    color: var(--text-white);
-
-}
-
-.nav-link::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    color: var(--text-white);
-    background-color: var(--background-color-white);
-    transition: 0.3s ease-in-out;
-}
-
-.nav-link:hover::before{
-    width: 100%;
-    transition: 0.3s;
-}
-
-.nav-btn{
-    background-color: var(--background-color-white);
-    padding: 10px 40px;
-    border-radius: 30px;
-    font-weight: bold;
-    color: var(--text-blue);
-}
-
-.nav-btn:hover{
-    background-color: var(--background-color-white);
-    color: var(--text-blue);
-}
-
-
-.Hero-countdown{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.single-count-content{
-    text-align: center;
-}
-
- .count {
-    color: #ee163a;
-    font-size: 72px;
-    font-weight: 600;
-    line-height: 60px;
-}
-
- .text {
-    color: #ee163a;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.count-color-1  .count {
-       color: #ee163a;
-}
-
-.count-color-1  .count {
-       color: #ee163a;
-}
+/* ========== wahed-css end ========== */
