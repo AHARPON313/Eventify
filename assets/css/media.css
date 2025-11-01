@@ -1,3 +1,4 @@
+/* --------------------------------------------------hero section  start*/
 @media  (min-width: 576px) and (max-width: 767px) {
    .single-count-content {
         padding: 0 15px;
@@ -35,7 +36,6 @@
 }
 
 
-
 @media  (min-width: 250px) and (max-width: 576px){
      .single-count-content .count {
         font-size: 24px;
@@ -58,7 +58,7 @@
 }
 
 }
-
+/* --------------------------------------------------hero section  end*/
 
 /* --------------------------------------------------------   Event menu start */
 @media (max-width: 992px) {
