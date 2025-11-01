@@ -100,3 +100,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ----------------------------------------------------------- about meetups end
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof GLightbox !== 'undefined') {
+    GLightbox({
+      selector: '.event-gallery',
+      touchNavigation: true,
+      loop: true,
+    });
+  }
+});
+
