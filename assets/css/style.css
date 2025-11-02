@@ -1,98 +1,251 @@
-:root{
-    --text-white:#ffffff;
-    --text-blue:rgb(24, 99, 255);
-    --titel-color:rgb(27, 39, 61);
-    --text-hover:#ffffff;
-    --text-hover:linear-gradient(to right, #102baf 0%, #1664ff 100%);
+:root {
+    --text-white: #ffffff;
+    --text-blue: rgb(24, 99, 255);
+    --titel-color: rgb(27, 39, 61);
+    --text-hover: #ffffff;
+    --text-hover: linear-gradient(to right, #102baf 0%, #1664ff 100%);
     --titel-sub-text: #777777;
-    --background-color-white:#ffffff;
+    --background-color-white: #ffffff;
     --hero-secton-overlay: -webkit-linear-gradient(left, rgba(16, 43, 175, 0.2) 0%, rgba(22, 100, 255, 0.2) 100%);
-    --sponsor-bg-color:rgb(245, 248, 255);
+    --sponsor-bg-color: rgb(245, 248, 255);
     --card-hover-color: linear-gradient(to right, #102baf 0%, #1664ff 100%);
     --card-box-shadow: 0px 8px 16px 0px rgba(72, 127, 255, 0.1);
 }
 
+/********************** slider-side********************* */
 
-.hero-secton{
-    background-image: url(/assets/images/jpg/header-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 750px;
+.swiper {
+    width: 100%;
+    height: 100%;
 }
 
-.navbar{
-    padding: 20px 0;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-link{
-    color: var(--text-white);
-    font-weight: bold;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-title {
+    width: 650px;
+    /* background-color: red; */
+    /* margin-top: 104px !important; */
+}
+
+.section-title p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h1 {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sponsor {
+    height: 500px;
+    width: 100%;
+    background-color: #f5f8ff;
+    padding-bottom: 130px;
+    padding-top: 115px;
+}
+
+.swiper-slide img {
+    width: 285px;
+}
+
+.swiper-slide {
+    display: flex !important;
+    gap: 20px;
+    align-items: baseline;
+    background-color: transparent;
+}
+
+.map {
+    width: 1100px;
+    height: 230px !important;
+
+}
+
+.map-section {
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+    padding-top: 30px;
+}
+
+iframe {
+    border: 10px solid white !important;
+    box-shadow: 0px 0px 21px 0px rgba(72, 127, 255, 0.29);
+    margin-top: 20px !important;
+}
+
+.inform-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1863ff;
+    font-size: 25px;
+    color: white;
+}
+
+.inform-data h6 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.inform-data p {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1b273d;
+    margin-top: 5px;
+}
+
+.social-information {
+    display: flex;
+    gap: 20px;
+}
+
+.information-content {
+    padding-left: 88px;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    /* border: none !important; */
+    background-color: rgba(75, 75, 232, 0.073);
+
+}
+
+.form-control {
+    padding: 18px;
+    border-radius: 5px !important;
+    background-color: transparent;
     position: relative;
 }
-.nav-link:hover{
-    color: var(--text-white);
 
-}
-
-.nav-link::before{
-    content: "";
+.input-div i {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    color: var(--text-white);
-    background-color: var(--background-color-white);
-    transition: 0.3s ease-in-out;
+    /* left: 29px; */
+    /* bottom: 10px; */
+    margin-top: -38px;
+    margin-left: 340px;
 }
 
-.nav-link:hover::before{
+.input-div .message {
+    padding-bottom: 100px;
+}
+
+.input-div .fa-message {
+    margin-left: 738px;
+    margin-top: -118px;
+}
+
+.information {
     width: 100%;
-    transition: 0.3s;
+    height: 600px;
+    /* background-color: red; */
+    padding-top: 150px;
+    /* padding-right: 150px; */
 }
 
-.nav-btn{
-    background-color: var(--background-color-white);
-    padding: 10px 40px;
-    border-radius: 30px;
-    font-weight: bold;
-    color: var(--text-blue);
+.right-side-input {
+    /* background-color: blue; */
+    padding-right: 77px;
 }
 
-.nav-btn:hover{
-    background-color: var(--background-color-white);
-    color: var(--text-blue);
+.footer-section {
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(180deg, rgba(24, 97, 255, 0.614) 0%, rgba(3, 44, 133, 0.914) 100%), url("../images/jpg/footer.jpg");
+    background-size: cover;
+
 }
 
+.footer-headline h1 {
+    font-size: 50px;
+}
 
-.Hero-countdown{
+.footer-headline {
+    padding-top: 150px;
+}
+
+.footer-input .form-control {
+    border: none !important;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.19);
+    border-radius: 40px !important;
+    padding: 30px;
+    width: 700px;
+    position: relative;
+}
+
+.footer-input ::placeholder {
+    color: white !important;
+    font-weight: 600;
+    font-size: 17px !important;
+}
+
+.main-btn {
+    padding: 20px 40px;
+    color: #1863ff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 35px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 321px;
+}
+
+.icon-div {
+    width: 40px;
+    height: 40px;
+    background-color: #1863ff;
+    border-radius: 50%;
+    color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: #1664ff;
+        transition: 0.5s;
+
+    }
 }
 
-.single-count-content{
-    text-align: center;
+.footer-icon {
+    display: flex;
+    gap: 15px;
 }
 
- .count {
-    color: #ee163a;
-    font-size: 72px;
-    font-weight: 600;
-    line-height: 60px;
+.footer-contetn-right {
+    margin-top: 70px;
+    color: white;
+    margin-bottom: 50px;
 }
 
- .text {
-    color: #ee163a;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.count-color-1  .count {
-       color: #ee163a;
-}
-
-.count-color-1  .count {
-       color: #ee163a;
+.footer-content {
+    margin-top: 70px;
+    color: white;
 }

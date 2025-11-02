@@ -1,0 +1,87 @@
+@media screen and (max-width: 768px) {
+    .map {
+        width: auto;
+        height: auto !important;
+    }
+
+    .section-title {
+        width: auto;
+    }
+
+    .sponsor {
+        height: auto;
+        width: 100%;
+        background-color: #f5f8ff;
+        padding-bottom: 60px;
+        padding-top: 35px;
+    }
+
+    .right-side-input {
+        padding-right: 0px;
+    }
+
+    .information-content {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .information {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .input-div i {
+        display: none;
+    }
+
+    .input-div .message {
+        padding-bottom: 100px;
+    }
+
+    .input-div .fa-message {
+        display: none;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        display: flex !important;
+        gap: 0px;
+        align-items: baseline;
+        background-color: transparent;
+        flex-wrap: wrap;
+    }
+
+    .section-title h1 {
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .footer-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-input .form-control {
+        padding: 20px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px !important;
+
+    }
+
+    .footer-headline h1 {
+        font-size: 30px;
+    }
+
+    .footer-headline {
+        padding-top: 50px;
+    }
+
+    .main-btn {
+        display: none;
+    }
+}
